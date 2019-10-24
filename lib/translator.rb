@@ -31,12 +31,12 @@ end
 def get_english_meaning(file_path, japanese_emoticon)
    emoticons_library = load_library(file_path)
    
-   apology_message2 = "Sorry, no such emoticon here!"
+   message = "Sorry, no such emoticon here!"
    
    emojis2 = emoticons_library[:get_meaning]
    if emojis2.include?(japanese_emoticon)
      emojis2[japanese_emoticon]
   else
-    apology_message2
+    message
   end
 end
