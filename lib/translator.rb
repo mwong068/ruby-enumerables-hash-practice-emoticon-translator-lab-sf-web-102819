@@ -11,7 +11,5 @@ def load_library(file_path)
       emoticons[:get_meaning] = emoticons[:get_meaning].merge({emoticons_array[1] => meaning})
       emoticons[:get_emoticon] = emoticons[:get_emoticon].merge({emoticons_array[0] => emoticons_array[1]})
     end
-  end
- 
  pp emoticons
 end
