@@ -8,7 +8,8 @@ def load_library(file_path)
   emoticons[get_emoticon] = {}
   
   emoticons_library.each do |meaning, emoticons_array|
-      emoticons[:get_meaning] = emoticons[:get_meaning].merge({emoticons_array[1] => 
+      emoticons[:get_meaning] = emoticons[:get_meaning].merge({emoticons_array[1] => meaning})
+      emoticons[:]
       pp emoticons_array[i]
     i += 2
     end
