@@ -12,7 +12,11 @@ def load_library(file_path)
       emoticons[:get_meaning] = emoticons[:get_meaning].merge({emoticons_array[1] => meaning})
       emoticons[:get_emoticon] = emoticons[:get_emoticon].merge({emoticons_array[0] => emoticons_array[1]})
     end
-emoticons
+pp emoticons
 end
 
-def get_japanese_emoticon()
+def get_japanese_emoticon(file_path, western_emoticon)
+  emoticons_library = load_library(file_path)
+
+  
+end
