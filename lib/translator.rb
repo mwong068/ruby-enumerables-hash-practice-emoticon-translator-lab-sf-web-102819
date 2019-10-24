@@ -35,8 +35,8 @@ def get_english_meaning(file_path, japanese_emoticon)
    
    emojis2 = emoticons_library[:get_meaning]
    if emojis2.include?(japanese_emoticon)
-    return emojis2[japanese_emoticon]
+    emojis2[japanese_emoticon]
   else
-    return apologies
+    apologies
   end
 end
