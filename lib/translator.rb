@@ -20,9 +20,8 @@ def get_japanese_emoticon(file_path, western_emoticon)
   
    apology = "Sorry, no such emoticon here!"
    
-  just_emojis = emoticons[:get_emoticon]
-   if just_emojis.includes?(western_emoticon)
-     return just_emojis[western_emoticon]
+   if emoticons[:get_emoticon].include?(western_emoticon)
+     return emoticons[:get_emoticon][western_emoticon]
   else
     return apology
   end
