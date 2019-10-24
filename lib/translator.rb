@@ -22,8 +22,8 @@ def get_japanese_emoticon(file_path, western_emoticon)
    
    emojis = emoticons[:get_emoticon]
    if emojis.include?(western_emoticon)
-     return emojis[western_emoticon]
+     emojis[western_emoticon]
   else
-    return apology
+    apology
   end
 end
