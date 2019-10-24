@@ -17,10 +17,13 @@ end
 
 def get_japanese_emoticon(file_path, western_emoticon)
   emoticons_library = load_library(file_path)
+  
+   apology = "Sorry, no such emoticon here!"
+   
+   if western_emoticon === emoticons[:get_emoticon]
+     return emoticons[:get_emoticon][western_emoticon]
+     
+  
 
-  if western_emoticon
-    return "Sorry, no such emoticon here!"
-  end
-  
-  
+  apology
 end
