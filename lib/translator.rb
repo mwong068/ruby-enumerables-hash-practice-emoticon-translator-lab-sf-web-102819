@@ -18,25 +18,25 @@ end
 def get_japanese_emoticon(file_path, western_emoticon)
   emoticons_library = load_library(file_path)
   
-   apology_message = "Sorry, no such emoticon here!"
+   apology = "Sorry, no such emoticon here!"
    
    emojis = emoticons_library[:get_emoticon]
    if emojis.include?(western_emoticon)
      emojis[western_emoticon]
   else
-    apology_message
+    apology
   end
 end
 
 def get_english_meaning(file_path, japanese_emoticon)
    emoticons_library = load_library(file_path)
    
-   message = "Sorry, no such emoticon here!"
+   apologies = "Sorry, no such emoticon here!"
    
    emojis2 = emoticons_library[:get_meaning]
    if emojis2.include?(japanese_emoticon)
      emojis2[japanese_emoticon]
   else
-    message
+    apologies
   end
 end
